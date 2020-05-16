@@ -1,55 +1,195 @@
+body,html{
+  overflow-x:hidden!important;
+}
 .header
 {
         background-image: url("bg.jpg");
-        width: 100% !important;
-        
         background-repeat: no-repeat!important;
         left: 0;
         margin:0;
-        min-height: 100%;
         min-width:  674px;
         padding:0;
-        position:fixed;
         top:0;
         z-index:-1;
-        height:auto;
+        overflow-x: hidden;
+        height:100vh!important;
         background-size:cover;
         animation: grow 150s infinite;
     }
-    @keyframes grow{
-        0%{transform:scale(1);}
-        50%{transform:scale(1.3);}
-        100%{transform:scale(1);}
+  
+    #about{
+      position: relative;
+      padding-top: 10%;
     }
-.writing{
-    padding-top: 20%;
-    padding-left: 45%;
-    color:white;
-    filter: blur(0px)!important;
-}
+    h6{
+        border-right: solid 3px rgba(0,255,0,.75);
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family:'Patrick Hand', cursive;
+        font-size: 48px;
+        color: rgba(255,255,255,.70);
+        margin: 0 auto;
+        
+      }
+      h3{
+        font-family: 'Patrick Hand', cursive;;
+      }
+      .writing{
+          padding-top: 150px;
+          padding-left: 700px;
+          color:white;
+          opacity:80%;
+      }
+      /* Animation */
 h6 {
-        margin-left:34%;
-        color:white;
-}
-h2{
-    margin-left:35%!important;
-    color:white!important;
-    animation: animated-text 50s steps(27,end) 2s infinite,
-    animated-cursor 600ms steps(27,end) infinite;
+  animation: animated-text 9s steps(25,end) 2s infinite,
+             animated-cursor 600ms steps(25,end) infinite;
 }
 
-  /* text animation */
+/* text animation */
+
+@keyframes animated-text{
+  0%{width: 0;}
+  50%{width: 520px;}
+  100%{width: 520px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color:white;}
+      to{border-right-color: transparent;}
+}
+.meta{
+
+  padding-left: 5px;
+  width: 83%;
+  height: 195px;
+  margin-left:150px!important ;
+  padding-top: 180px!important;
   
+}
+
+h5 {
+  width: 200%;
+  height: 50%;
+  font-size: 25px;
+  padding-top:5%;
+  padding-left:35%!important;
+  color: white;
+  opacity: 80%;
+}
+
+h5::after{
+  content: "";
+  width: 200%;
+  height: 100%;
+  line-height: 45px;
+  left: 10%;
+  top: 50%;
+  animation: abomination1 7.5s linear infinite;
+  animation-fill-mode: forwards;
+}
+#ai{
+  width: 90%;
+  height: 500px!important;
+  padding-bottom: 50px;
+  padding-left: 90px!important;
+
+}
+#ap{
+  padding-top:80px!important;
+  padding-right: 90px;
+  text-align: start;
+}
+
+  @keyframes abomination1 {
+  0% {
+    content: "A";
+  }
+  4% {
+    content: "A V";
+  }
+  8% {
+    content: "A Vib";
+  }
+  10% {
+    content: "A Vibra";
+  }
+  14% {
+    content: "A Vibrant";
+  }
+  18% {
+    content: "A Vibrant Co";
+  }
+  22% {
+    content: "A Vibrant Commu";
+  }
+  28% {
+    content: "A Vibrant Communi";
+  }
+  32% {
+    content: "A Vibrant Community";
+  }
+  40% {
+    content: "A Vibrant Community of";
+  }
+  55% {
+    content: "A Vibrant Community of STUDENTS";
+  }
+  78% {
+    content: "A Vibrant Community of DEVELOPERS";
+  }
+  100%
+  {
+    content:"A Vibrant Community of PROFFESSIONALS"; ;
+  }
+
+}
+ 
+@media(max-width:768px)
+{
+  .header{
+      background-size:cover;
+      animation: grow 80s infinite;
+      overflow-x: hidden!important;
+  }
+  #about{
+    padding-top: 20%;
+    position: relative;
+    padding-bottom: 20%;
+    background-color: rgb(212, 211, 211);
+    width: 100%;
+    overflow-x: hidden!important;
+  }
+  h6{
+      font-size: 25px;
+    margin-left:70px!important;
+  }
+  h5{
+    padding-left:63px!important;
+    font-size:15px;
+  }
   @keyframes animated-text{
     0%{width: 0;}
-    50%{width: 1050px;}
-    100%{width: 1050px;}
+    50%{width: 275px;}
+    100%{width: 275px;}
   }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color:green;}
-        to{border-right-color: transparent;}
+  .writing{
+      padding-left:10%;
+      color:white;
+      opacity: 70%;
+      padding-top:40% ;
+      padding-left:20%;
   }
-
+  #ai{
+    width:100%;
+    padding-left: 0.5px!important;
+    padding-bottom: 0px!important;
+  }
+#ap{
+  text-align: center;
+  padding-left: 90px!important;
+  padding-top: 3px!important;
+}
+}
