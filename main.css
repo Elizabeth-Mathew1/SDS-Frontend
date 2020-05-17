@@ -251,20 +251,23 @@ width:490px ;height:40px;
   padding-top: 2px!important;
 }
 #mess{
-  width:230px!important;
+  width:300px!important;
   height:150px!important;
-  margin-top: 0px!important;
 }
 #fn{
-  width:200px ;height:40px;
+  width:300px ;height:40px;
 }
 #em{
-  width:200px ;height:40px;
+  width:300px ;height:40px;
 }
 #fa2{
   font-size:28px;
   padding-left:0.5%;
 }
+#d1{
+  padding-top: 5%;
+}
 #icon{
   padding-left:10%;
+}
 }
