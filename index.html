@@ -5,17 +5,51 @@
    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" href="logo.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
    <link rel="stylesheet" href="main.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   
   <body>
 
-    <div class="header">
+   
+      <nav class="navbar navbar-expand-sm fixed-top py-3">
+        <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="logo.png" style="height:50px ;width:200px"></a>
+            <button type="button" data-toggle="collapse" data-target="#mynavbar"class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="mynavbar" class="collapse navbar-collapse">
+              
+              <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item"><a href="#about" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                    <li class="nav-item"><a href="#things" class="nav-link text-uppercase font-weight-bold">Mission</a></li>
+                    <li class="nav-item"><a href="#icon" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                    <li class="nav-item"><a href="#at" class="nav-link text-uppercase font-weight-bold">Join </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+                <script>
+                  $(function () {
+                    $(window).on('scroll', function () {
+                        if ( $(window).scrollTop() > 10 ) {
+                            $('.navbar').addClass('active');
+                        } else {
+                            $('.navbar').removeClass('active');
+                        }
+                    });
+                });
+                
+                </script>
+      <div class="header">
       <div class="writing"><h3>Welcome to</h3></div>
         <div class="intro">
       <h6>Student Developer's Society</h6></div>
@@ -25,7 +59,7 @@
     </div>
     <section id="about">
       <h3 style="text-align: center;">ABOUT US</h3>
-      <hr style="width:80px;height: 1.5px;background:rgb(76, 204, 176);">
+      <hr style="background-color: aquamarine; height:1px;text-align:center">
       <div class="row">
         <div class="col-xs-12 col-md-6">
       <img src="about.png" id="ai">
@@ -40,7 +74,8 @@
     </section>
     <section id="things">
       <h3 style="text-align: center;">THINGS WE CAN DO</h3>
-      <hr style="width:100px;height: 1.5px;background:rgb(76, 204, 176);">
+      <hr style="background-color: aquamarine; height:1px;text-align:center">
+
       <div class="row" id="c2">
         <div class="col-md-3" id="c">
       <i class="fa fa-comments-o"  aria-hidden="true" id="fa1"></i>
@@ -70,7 +105,7 @@
     </section>
     <section id="at">
       <h3 style="text-align: center;">GET IN TOUCH</h3>
-      <hr style="width:100px;height: 1.5px;background:rgb(76, 204, 176);">
+      <hr style="background-color: aquamarine; height:1px;text-align:center">
       <form id="f1">
         <div class="row">
           <div class="col-ms-6">
@@ -88,12 +123,12 @@
       </div>
       </form>
       <div class="text-center" id="btn">
-      <button type="button" style="color:black; background-color: aquamarine;height: 50px;width: 150px;" id="send">SEND IT</button>
+      <button type="button" style="color:black; background-color: aquamarine;height: 50px;width: 150px ;" id="send">SEND IT</button>
       </div>
     </section>
     <section id="join">
       <h3 style="text-align: center;">JOIN US</h3>
-      <hr style="width:80px;height: 1.5px;background:rgb(76, 204, 176);">
+      <hr style="background-color: aquamarine; height:1px;text-align:center">
       <div id="icon">
       <i class="fa fa-instagram" aria-hidden="true" id="fa2"></i> <i class="fa fa-meetup"  aria-hidden="true" id="fa2"></i><i class="fa fa-twitter" aria-hidden="true" id="fa2"></i>
       <i class="fa fa-facebook" aria-hidden="true" id="fa2"></i><i class="fa fa-linkedin" aria-hidden="true" id="fa2"></i><i class="fa fa-gitlab" aria-hidden="true" id="fa2"></i>
