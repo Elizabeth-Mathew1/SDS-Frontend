@@ -110,24 +110,55 @@ h5::after{
   padding-bottom: 15%;
 }
 
-.fa{
+#fa1{
   font-size:70px!important;
   color:aquamarine;
   padding-left: 45%;
   padding-top: 20%;
   
 }
+#icon{
+  padding-left:30%;
+  padding-top:5%;
+  padding-bottom: 5%;
+}
+#fa2{
+  font-size:48px;
+  padding-right:5%;
+  color: aquamarine;
+}
 h4{
   text-align: center;
 }
 
 #c2{
-  padding-left:10%;
-  padding-right: 10%;
+  padding-top: 10px!important;
 }
+
 form{
-  padding-left:10%;
-  padding-top:7%;
+  padding-left:15%;
+  padding-top:7%!important;
+}
+#mess{
+  width:1000px!important;
+  height:150px!important;
+  margin-top: 0px!important;
+}
+
+#at{
+  padding-bottom:10%;
+}
+#btn{
+  padding-top: 5%;
+}
+#fn{
+  width:500px ;height:40px;
+}
+#em{
+width:490px ;height:40px;
+}
+#join{
+  padding-top: 2%;
 }
   @keyframes abomination1 {
   0% {
@@ -219,4 +250,21 @@ form{
   padding-left: 40px!important;
   padding-top: 2px!important;
 }
+#mess{
+  width:230px!important;
+  height:150px!important;
+  margin-top: 0px!important;
+}
+#fn{
+  width:200px ;height:40px;
+}
+#em{
+  width:200px ;height:40px;
+}
+#fa2{
+  font-size:28px;
+  padding-left:0.5%;
+}
+#icon{
+  padding-left:10%;
 }
