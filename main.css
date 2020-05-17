@@ -106,15 +106,17 @@ h5::after{
   text-align: start;
 }
 #things{
-  padding-top:3%;
+  padding-top:10%!important;
   padding-bottom: 15%;
+  padding-left:10%;
+  padding-right:10%;
 }
 
 #fa1{
   font-size:70px!important;
   color:aquamarine;
   padding-left: 45%;
-  padding-top: 20%;
+  padding-top: 40%;
   
 }
 #icon{
@@ -159,6 +161,17 @@ width:490px ;height:40px;
 }
 #join{
   padding-top: 2%;
+}
+#footer{
+  background-color: #08AEEA;
+background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+padding-top:5%;
+padding-bottom:5%;
+
+}
+#sec,#sec1{
+    padding-left:40%;
+    color:white;
 }
   @keyframes abomination1 {
   0% {
@@ -211,6 +224,7 @@ width:490px ;height:40px;
       animation: grow 80s infinite;
       overflow-x: hidden!important;
   }
+  
   #about{
     padding-top: 20%;
     position: relative;
@@ -218,6 +232,9 @@ width:490px ;height:40px;
     background-color: rgb(212, 211, 211);
     width: 100%;
     overflow-x: hidden!important;
+  }
+  #things{
+    padding-top:30%!important;
   }
   h6{
       font-size: 25px;
@@ -260,14 +277,31 @@ width:490px ;height:40px;
 #em{
   width:300px ;height:40px;
 }
+#footer{
+  padding-top: 10%;
+}
 #fa2{
   font-size:28px;
-  padding-left:0.5%;
+  padding-left:1%;
+  padding-top: 20%;
+  padding-bottom: 10%;
+}
+#fa1{
+  padding-top:10%;
+}
+#sec,#sec1{
+  padding-left: 25%;
+  font-size:10px;
+  color:white;
 }
 #d1{
-  padding-top: 5%;
+  padding-top: 2%;
 }
 #icon{
   padding-left:10%;
+}
+#btn{
+  padding-top:15%;
+  padding-bottom:10%;
 }
 }
