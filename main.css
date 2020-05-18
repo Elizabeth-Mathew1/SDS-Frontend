@@ -1,4 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+p{
+  font-family: 'Jost', sans-serif;
+  font-size:28px;
+}
 body,html{
   overflow-x:hidden!important;
 }
@@ -169,18 +175,20 @@ body,html{
         border-right: solid 3px rgba(0,255,0,.75);
         white-space: nowrap;
         overflow: hidden;    
-        font-family:'Patrick Hand', cursive;
+        font-family: 'Lato', sans-serif;
         font-size: 48px;
         color: rgba(255,255,255,.70);
         margin: 0 auto;
         
       }
       h3{
-        font-family: 'Patrick Hand', cursive;;
+        font-family: 'Lato', sans-serif;
+        font-size: 40px!important;
+      
       }
       .writing{
           padding-top: 150px;
-          padding-left: 700px;
+          padding-left: 650px;
           color:white;
           opacity:80%;
       }
@@ -194,8 +202,8 @@ h6 {
 
 @keyframes animated-text{
   0%{width: 0;}
-  50%{width: 520px;}
-  100%{width: 520px;}
+  50%{width: 590px;}
+  100%{width: 590px;}
 }
 
 /* cursor animations */
@@ -379,12 +387,14 @@ padding-bottom:5%;
       animation: grow 80s infinite;
       overflow-x: hidden!important;
   }
-  
+  h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px!important;
+  }
   #about{
     padding-top: 20%;
     position: relative;
     padding-bottom: 20%;
-    background-color: rgb(212, 211, 211);
     width: 100%;
     overflow-x: hidden!important;
   }
@@ -393,16 +403,16 @@ padding-bottom:5%;
   }
   h6{
       font-size: 25px;
-    margin-left:70px!important;
+    margin-left:50px!important;
   }
   h5{
-    padding-left:63px!important;
-    font-size:15px;
+    padding-left:25px!important;
+    font-size:17px;
   }
   @keyframes animated-text{
     0%{width: 0;}
-    50%{width: 275px;}
-    100%{width: 275px;}
+    50%{width: 320px;}
+    100%{width: 320px;}
   }
   .writing{
       padding-left:10%;
